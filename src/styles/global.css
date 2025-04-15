@@ -1,20 +1,47 @@
 @import "tailwindcss";
 
 @theme {
-    --color-secondary-400:  #2ed9a4;
-    --color-secondary-500: #09bc89;
-    --color-secondary-300: #69ecbf;
-
+  --color-secondary-400: #2ed9a4;
+  --color-secondary-500: #09bc89;
+  --color-secondary-300: #69ecbf;
+  --color-primary-950: #172a3a;
+  --color-secondary-200: #a4f6d4;
 }
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
+
+/* Opcionales: delays para escalonado */
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+
 /* cambiar lenguaje a css con  ctrl + shift + p*/
 @font-face {
-    font-family: 'Lobster-Regular';
-    src: url('/fonts/Lobster-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Lobster-Regular";
+  src: url("/fonts/Lobster-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-  }
+  font-family: "Poppins", sans-serif;
+}
