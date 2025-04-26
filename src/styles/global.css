@@ -1,12 +1,27 @@
 @import "tailwindcss";
 
 @theme {
+  --color-secondary-200: #f1e0a1; 
+  --color-secondary-300: #e0d67f; 
+  --color-secondary-400: #f5f23d; 
+  --color-secondary-500: #e5d46b; 
+  
+
+
+/*   --color-secondary-200: #a4f6d4;
   --color-secondary-400: #2ed9a4;
   --color-secondary-500: #09bc89;
-  --color-secondary-300: #69ecbf;
+  --color-secondary-300: #69ecbf;  */
+
+
+  --color-primary-300: #9ac5df;
+  --color-primary-800: #244c6880;
+  --color-primary-900: #234157;
   --color-primary-950: #172a3a;
-  --color-secondary-200: #a4f6d4;
+
+
 }
+
 @keyframes fade-in-up {
   0% {
     opacity: 0;
@@ -33,6 +48,28 @@
   animation-delay: 0.6s;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 60s linear infinite;
+}
+
+
+
+@media (min-width: 40rem) {
+  :where(.sm\:space-y-12>:not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 12) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
 /* cambiar lenguaje a css con  ctrl + shift + p*/
 @font-face {
   font-family: "Lobster-Regular";
