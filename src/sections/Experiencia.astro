@@ -16,16 +16,21 @@
       >
         <!-- Profile image -->
         <div class="w-40 h-40 md:w-56 md:h-56 flex-shrink-0">
-          <img
-            src="/public/img/yo.webp"
-            alt="Yucli Emmanuel Baza Ortuño"
-            loading="lazy"
-            width="192"
-            height="192"
-            decoding="async"
-            class="rounded-full w-full h-full object-cover border-2 border-secondary-500"
-          />
+          <picture>
+            <source srcset="/public/img/me.webp" type="image/webp">
+            <source srcset="/public/img/me.webp" type="image/webp">
+            <img
+              src="/public/img/me.webp"
+              alt="Yucli Emmanuel Baza Ortuño"
+              loading="lazy"
+              width="192"
+              height="192"
+              decoding="async"
+              class="rounded-full w-full h-full object-cover border-2 border-secondary-500"
+            />
+          </picture>
         </div>
+        
         <!-- Personal info -->
         <div
           class="text-center md:text-pretty bg-primary-900/50 p-6 rounded-xl border border-primary-800/50 shadow-sm"
@@ -81,7 +86,7 @@
               <div class="flex items-center gap-2">
                 <img
                   src="/svg/laravel2.svg"
-                  alt="nodejs"
+                  alt="laravel"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -89,7 +94,7 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Nodejs
+                  Laravel
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
@@ -107,7 +112,7 @@
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/php.svg"
-                  alt="java"
+                  alt="php"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -115,12 +120,12 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Java
+                  PHP
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/python.svg"
-                  alt="spring"
+                  alt="python"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -128,12 +133,12 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Spring
+                  Python
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/django.svg"
-                  alt="prisma"
+                  alt="django"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -141,12 +146,12 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Prisma
+                  Django
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/wordpress.svg"
-                  alt="postgresql"
+                  alt="wordpress"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -154,12 +159,12 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Postgresql
+                  WordPress
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/github.svg"
-                  alt="mongodb"
+                  alt="github"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -167,12 +172,12 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Mongodb
+                  Github
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/html.svg"
-                  alt="astro"
+                  alt="html"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -180,12 +185,12 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Astro
+                  Html
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/js.svg"
-                  alt="react"
+                  alt="js"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -193,12 +198,12 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  React
+                  Js
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/css.svg"
-                  alt="typeScript"
+                  alt="css"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -206,7 +211,7 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  TypeScript
+                  Css
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
@@ -224,7 +229,7 @@
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/firebase.svg"
-                  alt="angular"
+                  alt="firebase"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -232,12 +237,12 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Angular
+                  Firebase
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/filezilla.svg"
-                  alt="next.js"
+                  alt="filezilla"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -245,12 +250,12 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Next.js
+                  Filezilla
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
                   src="/svg/net.svg"
-                  alt="nodejs"
+                  alt="net"
                   loading="lazy"
                   width="30"
                   height="30"
@@ -258,7 +263,7 @@
                   class="h-7 w-auto object-contain"
                 />
                 <span class="sm:text-base text-sm font-medium -icon">
-                  Nodejs
+                  .Net
                 </span>
               </div><div class="flex items-center gap-2">
                 <img
@@ -338,7 +343,8 @@
                 <span class="sm:text-base text-sm font-medium -icon">
                   Mongodb
                 </span>
-              </div> --><div class="flex items-center gap-2">
+              </div> -->
+              <div class="flex items-center gap-2">
                 <img
                   src="/svg/astro.svg"
                   alt="astro"
@@ -593,3 +599,4 @@
     </div>
   </div>
 </section>
+<div class="top-0 left-0 w-full h-[2px] bg-gradient-to-r from-secondary-500/0 via-secondary-500/50 to-secondary-500/0"></div>
