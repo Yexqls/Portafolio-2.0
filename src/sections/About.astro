@@ -1,9 +1,8 @@
 <section id="Experiencia" class="py-8 sm:py-12 md:py-16">
   <div class="container mx-auto px-4">
     <header class="space-y-2 mb-12">
-      <h2 class="text-lg text-secondary-400">Quién soy</h2>
       <h3
-        class="text-4xl md:text-5xl font-bold py-2 bg-clip-text text-transparent bg-gradient-to-bl from-primary-950 via-white to-primary-950"
+        class="text-4xl md:text-5xl font-bold py-2 bg-clip-text"
       >
         Acerca de mí
       </h3>
@@ -17,8 +16,6 @@
         <!-- Profile image -->
         <div class="w-40 h-40 md:w-56 md:h-56 flex-shrink-0">
           <picture>
-            <source srcset="/img/me.webp" type="image/webp" />
-            <source srcset="/img/me.webp" type="image/webp" />
             <img
               src="/img/me.webp"
               alt="Yucli Emmanuel Baza Ortuño"
@@ -26,58 +23,68 @@
               width="192"
               height="192"
               decoding="async"
-              class="rounded-full w-full h-full object-cover border-2 border-secondary-500"
+              class="rounded-full w-full h-full object-cover "
             />
           </picture>
         </div>
 
         <!-- Personal info about me -->
-        <div
-          class="text-center md:text-pretty bg-primary-900/50 p-6 rounded-xl border border-primary-800/50 shadow-sm"
-        >
-          <p class="text-primary-300 leading-loose">
-            Soy un <strong>Programador Back-End</strong> y <strong
-              >Front-end</strong
-            > con <strong>1 año</strong> de experiencia construyendo aplicaciones
-            web modernas. Me especializo en <strong>Wordpress</strong>, <strong
-              >Laravel</strong
-            >, <strong
-              >Django</strong
-            >, y <strong>Astro con Tailwind CSS</strong>. Mi objetivo es crecer
-            profesionalmente, aportando <strong>correr</strong>, <strong
-              >mis habilidades</strong
-            > y <strong></strong>conocimientos
-          para desarrollar aplicaciones web <strong>impactantes</strong>.🖥️</p>
+        <div class="flex flex-col gap-4 md:gap-6">
+          <!-- Personal info -->
+          <div
+            class="text-center md:text-left bg-gray-800 rounded-2xl p-4 sm:p-6 lg:p-8 mb-8 border border-gray-600"
+          >
+          <h4 class="text-lg text-secondary-400 mb-2">
+              Quién soy
+            </h4>
+            <p class="text-primary-300 leading-loose">
+              Soy un <strong>Programador Back-End</strong> y <strong
+                >Front-end</strong
+              > con <strong>1 año</strong> de experiencia construyendo aplicaciones
+              web modernas. Me especializo en <strong>Wordpress</strong>, <strong
+                >Laravel</strong
+              >, <strong>Django</strong>, y <strong
+                >Astro con Tailwind CSS</strong
+              >. Mi objetivo es crecer profesionalmente, aportando <strong
+                >correr</strong
+              >, <strong>mis habilidades</strong> y <strong
+              ></strong>conocimientos para desarrollar aplicaciones web <strong
+                >impactantes</strong
+              >.🖥️
+            </p>
+          </div>
+
+          <!-- Skills / Tags -->
+          <div
+            class="text-center md:text-left bg-gray-800 rounded-2xl p-4 sm:p-6 lg:p-8 mb-8 border border-gray-600 flex flex-col gap-2"
+          >
+            <h4 class="text-lg text-secondary-400 mb-2">
+              Mis habilidades
+            </h4>
+            <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+              <span
+                class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
+                >Desarrollo Web</span
+              >
+              <span
+                class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
+                >Patrones de Diseño</span
+              >
+              <span
+                class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
+                >Optimización de Rendimiento</span
+              >
+              <span
+                class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
+                >Accesibilidad</span
+              >
+              <span
+                class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
+                >Metodologías</span
+              >
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- Skills section -->
-    <div class="mb-12">
-      <h4 class="text-xl font-semibold text-secondary-400 mb-4">
-        Mis habilidades
-      </h4>
-      <div class="flex flex-wrap gap-2">
-        <span
-          class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
-        >
-          Desarrollo Web
-        </span><span
-          class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
-        >
-          Patrones de Diseño
-        </span><span
-          class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
-        >
-          Optimización de Rendimiento
-        </span><span
-          class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
-        >
-          Accesibilidad
-        </span><span
-          class="md:text-sm text-xs bg-primary-800/30 text-primary-200 px-2 py-1 rounded-md border border-primary-800/50"
-        >
-          Metodologias
-        </span>
       </div>
     </div>
     <!-- Tech stack section -->
@@ -357,7 +364,6 @@
   </div>
 </section>
 
-<div
-  class="top-0 left-0 w-full h-[2px] bg-gradient-to-r from-secondary-500/0 via-secondary-500/50 to-secondary-500/0"
->
+<div class="w-full h-1 bg-gradient-to-r from-transparent via-secondary-500 to-transparent animate-pulse"></div>
+
 </div>

@@ -1,16 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  /* color texto */
-  --color-secondary-200: #f1e0a1;
+  /* Color luz */
+  --color-secondary-200: #2563eb;
+  /*   --color-secondary-200: #f1e0a1;*/
   --color-secondary-300: #e0d67f;
+  /* color texto */
+  --color-primary-300: #d1d5db;
+  /* color resaltado */
   --color-secondary-400: #f5f23d;
+  /* Separaciones */
   --color-secondary-500: #e5d46b;
   /* color fondo */
-  --color-primary-300: #bfbfbf;
   --color-primary-800: #4a4a4a;
-  --color-primary-900: #2f2f2f;
-  --color-primary-950: #1c1c1c;
+  /* Color fondo cards */
+  --color-primary-900: #1F2937;
+  --color-primary-950: #151e30;
 }
 
 @keyframes fade-in-up {
@@ -65,13 +70,15 @@
 }
 /* cambiar lenguaje a css con  ctrl + shift + p*/
 @font-face {
-  font-family: "Lobster-Regular";
-  src: url("/fonts/Lobster-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-family: "SpaceMono-Regular";
+  src: url("./Fonts/SpaceMono-Regular.ttf") format("truetype");
   font-style: normal;
-  font-display: swap;
+  font-display: normal;
 }
-
+/* TItulos */
+.SpaceMono-Regular {
+    font-family: 'SpaceMono-Regular', monospace;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
